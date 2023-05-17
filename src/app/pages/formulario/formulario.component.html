@@ -1,0 +1,13 @@
+<form>
+    <label for="carrera">Nombre de la carrera:</label>
+    <input type="text" id="carrera" name="carrera" [(ngModel)]="carrera.nombre" required>
+  
+    <label for="ciclos">Cantidad de ciclos:</label>
+    <input type="text" id="ciclos" name="ciclos" [(ngModel)]="carrera.cantidad"required>
+  
+    <label for="campus">Lugar del campus:</label>
+    <input type="text" id="campus" name="campus" [(ngModel)]="carrera.lugar"required>
+  <hr>
+    <button class="boton" (click)="guardar()">Enviar</button>
+  </form>
+  

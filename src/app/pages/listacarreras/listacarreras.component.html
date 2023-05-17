@@ -1,0 +1,31 @@
+<br>
+<br>
+<br>
+<div id="content">
+    <table>
+        <thead>
+            <tr>
+              <th>Nombre de la Carrera</th>
+              <th># Ciclos</th>
+              <th>Campus</th>
+
+              
+            </tr>
+          </thead>
+          <tbody>
+            <span *ngIf="listadoCarreras.length == 0">
+                No existen contactos
+            </span>
+            <tr *ngFor="let carreras of listadoCarreras" >
+              <td>{{carreras.nombre}}</td>
+              <td>{{carreras.cantidad}}</td>
+              <td>{{carreras.lugar}}</td>
+     
+            </tr>
+            
+          </tbody>
+    
+    
+    
+    </table>
+    
